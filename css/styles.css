@@ -603,7 +603,7 @@ progress {
 }
 
 .img-fluid {
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
   filter: grayscale(80%);
   transition: 1.5s;
