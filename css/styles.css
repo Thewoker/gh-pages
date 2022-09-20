@@ -661,21 +661,40 @@ progress {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 425px) {
   .container-sm, .container {
-    max-width: 540px;
+    max-width: 390px;
   }
   .img-fluid {
-    padding-left: 20%;
-    max-width: 70vw;
+    padding-left: 0%;
+    max-width: 50vw;
     height: auto;
     filter: grayscale(80%);
     transition: 1.5s;
+  }
+  .phone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
+  }
+  .img-fluid {
+    padding-left: 0%;
+    max-width: 50vw;
+    height: auto;
+    filter: grayscale(80%);
+    transition: 1.5s;
+  }
+  .phone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (min-width: 992px) {
@@ -714,6 +733,19 @@ progress {
     transition: 1.5s;
   }
 }
+@media (min-width: 2560px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 2500px;
+  }
+  .img-fluid {
+    padding-left: 10%;
+    max-width: 50vw;
+    height: auto;
+    filter: grayscale(80%);
+    transition: 1.5s;
+  }
+}
+
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -7680,7 +7712,7 @@ textarea.form-control-lg {
 
 .px-4 {
   padding-right: 1.5rem !important;
-  padding-left: 1.5rem !important;
+  padding-left: 2.5rem !important;
 }
 
 .px-5 {
